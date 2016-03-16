@@ -1,5 +1,3 @@
-//var arr=[3, 6, 2];
-
 describe("getArray", function() {
 	before(function() {
 		document.getElementById('entArr').value='2 6 3';
