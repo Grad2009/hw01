@@ -1,0 +1,82 @@
+body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+table {
+	width: 80%;
+	margin: auto;
+	padding-top: 20px;
+	}	
+
+td {
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+    transition: background-color 1s;
+    font: italic;
+    font-size: 2em;
+	margin: auto;
+	border-radius: 3px;;
+	}
+ 
+
+.text{
+	width: 600px;
+	margin: auto;
+}
+.text h2{
+	text-align: center;
+}
+.entNum{
+	width: 500px;
+	/*padding-top: 10px;*/
+	margin: auto;
+}
+
+.box-btn{
+	float: right;
+	padding: 20px 20px;
+	margin-right: 20%;
+	visibility: hidden;
+}
+
+
+input[type="button"]{
+	height: 25px;
+	background-color: #ACB1B1;
+	border: none;
+	border-radius: 3px;
+}
+
+input[type="button"]:hover{
+	background-color: #7E888A;
+}
+
+#message {
+	text-align: center;
+	visibility: hidden;
+	color: #53FF3C;
+	}
+	
+#example {
+	width: 305px;
+	position: relative;
+	margin-left: 30%;
+	}
+	
+#yel {
+	background-color: #FFFF3C;
+}
+#red {
+	background-color: #FF3C53;
+}
+#green {
+	background-color: #53FF3C;
+}
+#mocha {
+	width:700px;
+	padding-left:200px;
+}
