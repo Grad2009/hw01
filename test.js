@@ -57,7 +57,7 @@ describe("nextStep", function(){
 			assert.equal(document.getElementById('col2').style.backgroundColor,'rgb(83, 255, 60)'); //green
 		});
 	
-	it("массив отсортирован корректно, если 2, 3, 6", function() { // не нашел как сэмулировать нажатие ОК у alert, без алерта проходит
+	it("массив отсортирован корректно, если 2, 3, 6 (исходный массив 2, 6, 3)", function() { // не нашел как сэмулировать нажатие ОК у alert, без алерта проходит
 			document.getElementById('step').click();
 			document.getElementById('step').click();
 			document.getElementById('step').click();
