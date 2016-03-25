@@ -1,6 +1,6 @@
 var arr = [];
 var error = false;
-var red = '#FF3C53', green = '#53FF3C', yellow = '#FFFF3C';
+var redc = '#FF3C53', greenc = '#53FF3C', yellowc = '#FFFF3C';
 //var cell0,cell1,cell2;
 
 function main() {
@@ -29,7 +29,7 @@ function getArray() {
 	return arr;
 		}
 	
-function checkArrElem(some) { //Check if input is correct
+function checkArrElem(some) {   						//Check if input is correct
         if(!isNaN(some) && isFinite(some)) {
         return true;
 	        }
@@ -71,7 +71,7 @@ function nextStep(){
 				var temp = arr[innerI];
 				arr[innerI] = arr[innerI+1];
 				arr[innerI+1] = temp;
-				paint(cell1,cell2,red); 		// red
+				paint(cell1,cell2,redc); 		// red
 				cell1.innerHTML = arr[innerI];
 				cell2.innerHTML = arr[innerI+1];
 			}
@@ -80,12 +80,12 @@ function nextStep(){
 			if(innerI == arr.length-outerI){
 				innerI =0; 
 				outerI++;
-				paint(cell1,cell2,green); 		// green
+				paint(cell1,cell2,greenc); 		// green
 			}
 		}
 		
 	}else{
-		paint(document.getElementById('col0'),null,green); 	// paint 1st element
+		paint(document.getElementById('col0'),null,greenc); 	// paint 1st element
 		//alert('Массив отсортирован!');
 		document.getElementById('message').style.visibility = 'visible';
 		}
@@ -101,12 +101,12 @@ function checkAndPaint(innerI) {
 	if (innerI == 0) { 									//if 1st iteration - without reseting color of cell0 element
 				cell1 = document.getElementById('col'+innerI);
 				cell2 = document.getElementById('col'+(innerI+1));			
-				paint(cell1,cell2,yellow); 					// yellow
+				paint(cell1,cell2,yellowc); 					// yellow
 				} else { // standard painting
 					cell0 = document.getElementById('col'+(innerI-1));
 					cell1 = document.getElementById('col'+innerI);
 					cell2 = document.getElementById('col'+(innerI+1));			
 					paint(cell0,null,'#f0f0f2'); 				// reset to background color
-					paint(cell1,cell2,yellow); 				// yellow
+					paint(cell1,cell2,yellowc); 				// yellow
 				}
 }
