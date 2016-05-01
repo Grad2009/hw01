@@ -1,6 +1,6 @@
 # hw01
 
-First task in "Professional javascript" course by TEAM International
+First task in "Professional javascript" course by TEAM International: Bubble sort visualization
 
 Watch the gh-pages branch (master is empty)
 
